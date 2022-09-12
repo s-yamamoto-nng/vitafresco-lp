@@ -527,7 +527,7 @@ const Page = () => {
           <div className="flex mt-5 mb-5">
             <div className="mr-5 mb-3 w-full lg:scale-125 lg:mr-10 lg:translate-y-10 lg:translate-x-2 ">
               <Image src={guestThird} />
-              <p className="font-bold ml-7 lg:ml-1 text-xl lg:text-sm">
+              <p className="font-bold ml-7 lg:ml-1 text-xl lg:text-sm"> 
                 【仲良しシニア】
                 <br />
                 アクティブシニア
