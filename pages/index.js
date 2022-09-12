@@ -260,18 +260,18 @@ const Page = () => {
             <p>3年の時をかけて開発した</p>
             <p>毎日飲めるサプリメント</p>
           </div>
-          <div className="flex justify-center absolute z-10 w-full mt-10 whitespace-nowrap left-8 lg:-left-24 lg:translate-y-3 pt-5">
+          <div className="flex justify-center absolute z-10 w-full mt-10 whitespace-nowrap left-12 lg:-left-24 lg:translate-y-3 pt-5">
             <div className="vitaFresco">
-              <p className="-translate-x-12 translate-y-1 text-4xl lg:text-lg font-bold">
+              <p className="-translate-x-12 translate-y-1 text-3xl lg:text-base font-bold">
                 ビタフレスコができるまで
               </p>
             </div>
-            <div className="bg-indigo-800 p-5 relative -top-3 lg:p-0 rounded-full z-10 absolute left-56 lg:-translate-y-5">
-              <div className="relative rounded-full font-bold text-center w-32 h-32 lg:w-36 lg:h-36 lg:translate-y-2">
-                <p className="tracking-tighter whitespace-nowrap text-4xl lg:text-md text-white p-1 border-b-2">
+            <div className="bg-indigo-800 p-5 relative translate-y-5 -translate-x-24 -top-3 lg:p-0 rounded-full z-10 absolute left-64 lg:-translate-x-12 lg:-translate-y-0">
+              <div className="relative rounded-full font-bold text-center w-24 h-24 lg:w-28 lg:h-28 lg:translate-y-2">
+                <p className="tracking-tighter whitespace-nowrap text-3xl lg:text-bamd text-white p-1 border-b-2">
                   開発
                 </p>
-                <p className="text-white text-4xl lg:text-ms">秘話</p>
+                <p className="text-white text-3xl lg:text-ms">秘話</p>
               </div>
             </div>
           </div>
