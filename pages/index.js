@@ -487,9 +487,9 @@ const Page = () => {
             <p className="text-2xl">お客様の声</p>
           </div>
           <div className="flex mt-5 mb-5 border-b-1 border-user-color">
-            <div className="lg:mr-5 mb-3 w-9/12 lg:w-full">
+            <div className="lg:mr-5 mb-3 w-9/12 text-center lg:w-full">
               <Image src={guestFirst} />
-              <p className="font-bold ml-7 lg:ml-6 text-xl lg:text-sm">
+              <p className="font-bold text-center text-xl lg:text-sm">
                 【女性　30代】
               </p>
             </div>
@@ -510,9 +510,9 @@ const Page = () => {
             </div>
           </div>
           <div className="flex mt-5 mb-5 border-b-1 border-user-color">
-            <div className="lg:mr-5 mb-3 w-9/12 lg:w-full">
+            <div className="lg:mr-5 mb-3 w-9/12 text-center lg:w-full">
               <Image src={guestSecond} />
-              <p className="font-bold ml-7 lg:ml-5 text-xl lg:text-sm">
+              <p className="font-bold text-center text-xl lg:text-sm">
                 【男性　30代】
               </p>
             </div>
@@ -525,9 +525,9 @@ const Page = () => {
             </div>
           </div>
           <div className="flex mt-5 mb-5">
-            <div className="mr-5 mb-3 w-full lg:scale-125 lg:mr-10 lg:translate-y-10 lg:translate-x-2 ">
+            <div className="mr-5 mb-3 w-full text-center lg:scale-125 lg:mr-10 lg:translate-y-10 lg:translate-x-2 ">
               <Image src={guestThird} />
-              <p className="font-bold ml-7 lg:ml-1 text-xl lg:text-sm"> 
+              <p className="font-bold text-center text-xl lg:text-xs">
                 【仲良しシニア】
                 <br />
                 アクティブシニア
