@@ -182,7 +182,7 @@ const Page = () => {
             </div>
             <div className="flex">
               <div className="text-orange-400 p-3 m-2 lg:h-16 lg:p-2 whitespace-nowrap font-bold bg-white rounded bg-blue-800 text-white lg:h-full lg:pt-3 lg:pb-3 lg:m-0 lg:text-small lg:p-1">
-                <p className="xl:translate-y-9 lg:translate-y-3 text-white">
+                <p className="xl:translate-y-9 lg:translate-y-3 text-white lg:h-10">
                   プロフィール
                 </p>
               </div>
@@ -281,7 +281,7 @@ const Page = () => {
             </div>
             <div className="">
               <p className="text-blue-800 font-bold border-t-2 border-b-2 border-yellow-200 mt-3 p-3">
-                共同開発者の管理栄養士　川口美貴子先生のコメントを紹介します！
+                「管理栄養士　川口美貴子先生」と共同開発したサプリメントです！
               </p>
               <div className="font-bold mt-5">
                 <p>
@@ -445,7 +445,7 @@ const Page = () => {
               <p>
                 1包1回分ですので、
                 <br />
-                お仕事やご旅行へ持ち運びやすく、
+                出張先やご旅行へ持ち運びやすく、
                 <br />
                 いつでも衛生的。
               </p>
@@ -489,6 +489,9 @@ const Page = () => {
           <div className="flex mt-5 mb-5 border-b-1 border-user-color">
             <div className="lg:mr-5 mb-3 w-9/12 lg:w-full">
               <Image src={guestFirst} />
+              <p className="font-bold ml-7 lg:ml-6 text-xl lg:text-sm">
+                【女性　30代】
+              </p>
             </div>
             <div className="text-xl lg:text-xs">
               <p>美容に気を付けてる30代前半女性</p>
@@ -509,6 +512,9 @@ const Page = () => {
           <div className="flex mt-5 mb-5 border-b-1 border-user-color">
             <div className="lg:mr-5 mb-3 w-9/12 lg:w-full">
               <Image src={guestSecond} />
+              <p className="font-bold ml-7 lg:ml-5 text-xl lg:text-sm">
+                【男性　30代】
+              </p>
             </div>
             <div className="text-xl lg:text-xs">
               <p>カップラーメンばっかり食べてる独身男性</p>
@@ -521,16 +527,15 @@ const Page = () => {
           <div className="flex mt-5 mb-5">
             <div className="mr-5 mb-3 w-full lg:scale-125 lg:mr-10 lg:translate-y-10 lg:translate-x-2 ">
               <Image src={guestThird} />
+              <p className="font-bold ml-7 lg:ml-1 text-xl lg:text-sm">
+                【仲良しシニア】
+                <br />
+                アクティブシニア
+              </p>
             </div>
             <div className="text-xl lg:text-small">
               <p>健康に気を付けてる高齢者</p>
-              <p>
-                健康維持の為にサプリメントをはじめてみたのですが粒が大きいのか飲みにくくて喉につっかえてしまうことが増えてだんだん飲むことが煩わしくなってしまいました。
-              </p>
-              <o>
-                そんな私を気遣ってくれた孫が、「VITA
-                FRESCO」をプレゼントしてくれました。
-              </o>
+              <p>孫が、「VITA FRESCO」をプレゼントしてくれました。</p>
               <p>VITA FRESCOは辺粒が揃ってるから私たちでも飲みやすいのです。</p>
               <p>
                 個包装になっているので私でも飲む量がわかりやいですし、大学の管理栄養士の先生が監修してくれているので、私たちも安心して飲めます。
