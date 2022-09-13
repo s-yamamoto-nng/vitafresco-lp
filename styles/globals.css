@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.vitaFresco{
-  color:#fff;
-  font-size:30px;
-  background-color: rgb(60, 63, 231);
+.vitaFresco {
+  color: #fff;
+  font-size: 30px;
+  background-color: #0068b7;
   position: absolute;
   left: 25%;
   margin-top: 2%;
@@ -15,13 +15,13 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.vitaFresco::before{
+.vitaFresco::before {
   position: absolute;
   bottom: -25px;
   left: 0;
   width: 0;
   height: 0;
-  content: "";
+  content: '';
   border-top: 25px solid #005276;
   border-left: 25px solid transparent;
 }

@@ -22,6 +22,8 @@ import vitaFrescoImage2 from './img/vitaFresco_image02.png'
 import vitaFrescoImage3 from './img/vitaFresco_image03.png'
 import vitaFrescoImage4 from './img/vitaFresco_image04.png'
 import vitaFrescoImage5 from './img/vitaFresco_image05.png'
+import mailIcon from '../pages/img/mail-icon.png'
+import phoneIcon from '../pages/img/phone-icon.png'
 
 const Page = () => {
   return (
@@ -72,30 +74,38 @@ const Page = () => {
       {/*------------------------------------------------ header部 ---------------------------------------------------*/}
       <header className="h-full">
         <div className="w-full lg:text-small">
-          <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-blue-900 p-3">
-            <p className="mr-4 text-md border-solid border-2 border-white whitespace-nowrap p-1 text-center font-bold lg:mb-2 text-white">
+          <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-darkBlue-color p-3">
+            <p className="mr-4 text-md border-solid border-2 border-white whitespace-nowrap p-1 text-center font-bold lg:mb-2 text-white lg:mr-1">
               <span className="block text-center">ご購入・</span>
               <span>お問い合せ先</span>
             </p>
-            <div className="mr-2.5 font-bold whitespace-nowrap text-md font-bold text-white">
+            <div className="flex mr-2.5 font-bold whitespace-nowrap text-md font-bold text-white">
+              <div className="mt-2 lg:w-5 lg:mt-1">
+                <Image src={phoneIcon} />
+              </div>
               <p className="font-bold text-3xl lg:text-lg text-kirakira-yellow">
                 03-6820-1000
               </p>
             </div>
             <div className="text-md font-bold leading-4 text-white">
-              <p>＜ 受付時間 ＞ 9:00〜18:00</p>
-              <p>＜ 定休日 ＞ 木・日・祝</p>
+              <p>&lt;受付時間&gt;9:00〜18:00</p>
+              <p>&lt;定休日&gt;木・日・祝</p>
             </div>
           </div>
         </div>
         <div className="w-full lg:text-small">
-          <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-blue-600 p-3">
-            <div className="text-md font-bold leading-4 text-white mr-10">
+          <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-lightBlue-color p-3">
+            <div className="text-md font-bold leading-4 text-white mr-10 lg:mr-2 lg:text-small">
               <p>株式会社オール・デンタル・ジャパン</p>
               <p>〒111-0052 東京都台東区柳橋2-5-6</p>
             </div>
-            <div className="text-md font-bold leading-4 text-white">
-              <p className="text-lg lg:text-xs">info@all-dental-japan.com</p>
+            <div className="flex text-md font-bold leading-4 text-white">
+              <div className="lg:w-3 lg:scale-150 mr-2">
+                <Image src={mailIcon} />
+              </div>
+              <p className="text-lg xl:translate-y-2 lg:text-xs">
+                info@all-dental-japan.com
+              </p>
             </div>
           </div>
         </div>
@@ -154,11 +164,11 @@ const Page = () => {
                 <p className="text-2xl border-b-2 border-orange-400 border-dotted lg:text-sm">
                   川口美貴子<span>氏</span>
                 </p>
-                <p className="text-orange-400 mb-2 text-md lg:text-small">
+                <p className="text-orange-color mb-2 text-md lg:text-small">
                   大妻女子大学 家政学部教授/管理栄養士(医学博士)
                 </p>
               </div>
-              <div className="rounded-full text-xl lg:text-xs lg:p-4 lg:h-12 bg-common-orange text-white font-bold p-4">
+              <div className="rounded-full text-xl lg:text-xs lg:p-4 lg:h-12 bg-orange-color text-white font-bold p-4">
                 <p className="translate-y-1 lg:-translate-y-2 lg:translate-x-0.5">
                   監修
                 </p>
@@ -181,7 +191,7 @@ const Page = () => {
               </p>
             </div>
             <div className="flex">
-              <div className="text-orange-400 p-3 m-2 lg:h-16 lg:p-2 whitespace-nowrap font-bold bg-white rounded bg-blue-800 text-white lg:h-full lg:pt-3 lg:pb-3 lg:m-0 lg:text-small lg:p-1">
+              <div className="text-orange-400 p-3 m-2 lg:h-16 lg:p-2 whitespace-nowrap font-bold rounded bg-darkBlue-color text-white lg:h-full lg:pt-3 lg:pb-3 lg:m-0 lg:text-small lg:p-1">
                 <p className="xl:translate-y-9 lg:translate-y-3 text-white lg:h-10">
                   プロフィール
                 </p>
@@ -201,11 +211,11 @@ const Page = () => {
                 <p className="text-2xl border-b-2 border-orange-400 border-dotted lg:text-sm">
                   子安　正洋<span>氏</span>
                 </p>
-                <p className="text-orange-400 mb-2 text-md lg:text-small">
+                <p className="text-orange-color mb-2 text-md lg:text-small">
                   中目黒コヤス歯科　院長　歯科医院　歯学博士
                 </p>
               </div>
-              <div className="rounded-full text-xl lg:text-xs lg:p-4 lg:h-12 bg-common-orange text-white font-bold p-4">
+              <div className="rounded-full text-xl lg:text-xs lg:p-4 lg:h-12 bg-orange-color text-white font-bold p-4">
                 <p className="translate-y-1 lg:-translate-y-2 lg:translate-x-0.5">
                   監修
                 </p>
@@ -244,11 +254,13 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-common-orange text-center font-bold text-white p-5">
+      <div className="w-full bg-orange-color text-center font-bold text-white p-5">
+        <p className="text-3xl lg:text-xs">専門家が開発した毎日飲める</p>
         <p className="text-3xl lg:text-xs">
-          <span className="text-yellow-300">医療機関専用</span>サプリメント
+          <span className="text-lightOrange-color">医療機関専用</span>
+          サプリメント
         </p>
-        <p className="text-3xl lg:text-xs">いつでもどこでも新鮮に飲む栄養、</p>
+        {/* <p className="text-3xl lg:text-xs">いつでもどこでも新鮮に飲む栄養、</p> */}
       </div>
       <div className="p-10 lg:p-8 bg-gradient-to-b from-lightHexadecimal-color to-hexadecimal-color pt-5">
         <div className="w-1/2 lg:w-full m-auto">
@@ -266,7 +278,7 @@ const Page = () => {
                 ビタフレスコができるまで
               </p>
             </div>
-            <div className="bg-indigo-800 p-5 relative translate-y-5 -translate-x-24 -top-3 lg:p-0 rounded-full z-10 absolute left-64 lg:-translate-x-12 lg:-translate-y-0">
+            <div className="bg-darkBlue-color p-5 relative translate-y-5 -translate-x-24 -top-3 lg:p-0 rounded-full z-10 absolute left-64 lg:-translate-x-12 lg:-translate-y-0">
               <div className="relative rounded-full font-bold text-center w-24 h-24 lg:w-28 lg:h-28 lg:translate-y-2">
                 <p className="tracking-tighter whitespace-nowrap text-3xl lg:text-bamd text-white p-1 border-b-2">
                   開発
@@ -456,7 +468,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="text-center content-center bg-blue-600 p-5 pb-10">
+      <div className="text-center content-center bg-blue-color p-5 pb-10">
         <div className="block scale-75 lg:scale-90">
           <Image src={vitaFrescoTextImage} />
         </div>
@@ -481,7 +493,7 @@ const Page = () => {
           <Image src={vitaFrescoPhoto} />
         </div>
       </div>
-      <div className="w-full p-5 bg-light-pink">
+      <div className="w-full p-5 bg-white">
         <div className="w-1/2 lg:w-full m-auto">
           <div className="text-center font-bold text-white text-lg bg-user-color rounded-full p-2">
             <p className="text-2xl">お客様の声</p>
@@ -556,11 +568,13 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <section className="bg-light-blue pb-5 w-full p-16 lg:p-8 lg:pt-16">
+      <section className="bg-blue-color pb-5 w-full p-16 lg:p-8 lg:pt-16">
         <div className="w-1/2 m-auto lg:w-full">
           <div className="flex justify-center">
             <div className="font-bold text-lg text-white">
-              <p className="text-2xl lg:text-base">▶︎毎日の健康管理に</p>
+              <p className="text-2xl lg:text-base whitespace-nowrap">
+                ▶︎毎日の健康管理に
+              </p>
               <Image className="" src={vitaFrescoBasicText} />
               <div className="bg-white text-sm text-center">
                 <p className="text-2xl lg:text-sm text-light-blue">
@@ -568,13 +582,13 @@ const Page = () => {
                 </p>
                 <p className="text-sm text-light-blue">(栄養成分表示)</p>
               </div>
-              <div className="border-l-3 border-blue-300 pl-2 mt-5">
+              <div className="border-l-3 border-blue-300 pl-2 mt-5 lg:text-small">
                 <p>30包(1包当たり2.28g)</p>
                 <p>ハードカプセル×6粒</p>
               </div>
             </div>
             <div>
-              <div className="rounded-full p-3 bg-darkBlue-color w-24 h-24 absolute z-10 translate-x-40 -translate-y-10 lg:left-36">
+              <div className="rounded-full p-3 bg-darkBlue-color w-24 h-24 absolute z-10 translate-x-40 -translate-y-10 lg:left-32">
                 <p className="text-white text-md translate-y-2 translate-x-2">
                   <span className="text-4xl">30</span>包
                 </p>
@@ -666,32 +680,36 @@ const Page = () => {
             </tbody>
           </table>
           <div className="font-bold lg:text-small whitespace-nowrap text-right">
-            <p>
-              <span className="text-red-600">※赤字：特筆すべき含有栄養素</span>
-              <span>【開発協力】株式会社ヘルシーパス</span>
+            <p className="mt-5">
+              <span className="text-red-600 bg-white rounded-full p-2">
+                ※赤字：特筆すべき含有栄養素
+              </span>
+              <span className="text-white">
+                【開発協力】株式会社ヘルシーパス
+              </span>
             </p>
           </div>
         </div>
       </section>
-      <section className="bg-white pb-5 w-full p-16 lg:p-8 lg:pt-16">
+      <section className="bg-gray-color pb-5 w-full p-16 lg:p-8 lg:pt-16">
         <div className="w-1/2 m-auto lg:w-full">
           <div className="flex justify-center">
             <div className="font-bold text-lg text-white">
-              <p className="text-2xl text-light-blue lg:text-base">
+              <p className="text-2xl text-blue-color lg:text-base">
                 ▶︎毎日の健康管理に
               </p>
               <Image className="" src={vitaFrescoPremiumText} />
-              <div className="bg-light-blue text-center">
+              <div className="bg-blue-color text-center">
                 <p className="text-2xl lg:text-sm">ベーシック</p>
                 <p className="text-sm">(栄養成分表示)</p>
               </div>
-              <div className="mt-5 border-l-3 border-light-blue pl-2 text-light-blue">
+              <div className="mt-5 border-l-3 border-blue-color pl-2 text-blue-color lg:text-small">
                 <p>30包(1包当たり2.28g)</p>
                 <p>ハードカプセル×6粒</p>
               </div>
             </div>
             <div>
-              <div className="rounded-full p-3 bg-light-blue w-24 h-24 absolute z-10 translate-x-40 -translate-y-10 lg:left-36">
+              <div className="rounded-full p-3 bg-blue-color w-24 h-24 absolute z-10 translate-x-40 -translate-y-10 lg:left-32">
                 <p className="text-white text-md translate-y-2 translate-x-2">
                   <span className="text-4xl">30</span>包
                 </p>
@@ -702,12 +720,12 @@ const Page = () => {
           <div className="flex justify-center mt-10">
             <Image src={vitaFrescoImage5} />
           </div>
-          <table className="border-black border-2 w-full bg-white font-bold lg:text-xs mt-10 whitespace-nowrap">
+          <table className="border-black border-2 w-full font-bold lg:text-xs mt-10 whitespace-nowrap">
             <tbody>
               <tr>
-                <td className="border-x-2 border-black bg-white">エネルギー</td>
+                <td className="border-x-2 border-black">エネルギー</td>
                 <td className="border-x-2 border-black">14.53kcal</td>
-                <td className="border-x-2 border-black bg-white">ビタミンB6</td>
+                <td className="border-x-2 border-black">ビタミンB6</td>
                 <td>20.0mg</td>
               </tr>
               <tr>
@@ -731,7 +749,9 @@ const Page = () => {
               <tr>
                 <td className="border-x-2 border-black">ナトリウム</td>
                 <td className="border-x-2 border-black">
-                  1.39mg(食塩相当量0.003g)
+                  1.39mg
+                  <br />
+                  (食塩相当量0.003g)
                 </td>
                 <td className="border-x-2 border-black">ビタミンC</td>
                 <td>200mg</td>
@@ -773,8 +793,10 @@ const Page = () => {
             </tbody>
           </table>
           <div className="font-bold lg:text-small whitespace-nowrap text-right">
-            <p>
-              <span className="text-red-600">※赤字：特筆すべき含有栄養素</span>
+            <p className="mt-5">
+              <span className="text-red-600 bg-white rounded-full p-2">
+                ※赤字：特筆すべき含有栄養素
+              </span>
               <span>【開発協力】株式会社ヘルシーパス</span>
             </p>
           </div>
@@ -786,7 +808,7 @@ const Page = () => {
         </p>
       </div>
       <div className="flex">
-        <div className="w-1/2 bg-light-blue text-white font-bold text-right">
+        <div className="w-1/2 bg-blue-color text-white font-bold text-right">
           <Image
             className="scale-75 -translate-x-2"
             src={vitaFrescoBasicText}
@@ -804,11 +826,20 @@ const Page = () => {
         </div>
       </div>
       <div className="bg-darkBlue-color text-center text-2xl lg:text-base p-3">
-        <p className="text-white font-bold">
+        <p className="text-white font-bold lg:text-small lg:pr-10">
           ベーシックとプレミアムを合わせてご使用ください
         </p>
+        <div className="absolute bg-common-orange rounded-full z-10 rounded-full font-bold text-center w-36 h-36 lg:h-20 lg:w-20 xl:right-72 xl:-translate-y-24 lg:right-2 lg:-translate-y-12">
+          <p className="text-sm text-white pt-10 lg:pt-5 lg:text-small">
+            インプラントや
+            <br />
+            オペ後にも
+            <br />
+            最適！
+          </p>
+        </div>
       </div>
-      <div className="bg-white p-6 lg:p-2">
+      <div className="bg-white mt-5 mb-5 p-6 lg:p-2">
         <div className="w-1/2 m-auto lg:w-full">
           <div className="text-center cursor-pointer font-bold text-white text-2xl rounded-full xl:p-1 bg-gradient-to-t from-light-orange to-orange-600 border-light-orange border-4">
             <a href="https://adjshop.buyshop.jp/" target="__blank">
@@ -817,32 +848,40 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <footer className="h-24 bg-light-blue">
+      <footer className="h-24 bg-lightBlue-color">
         <div className="w-full lg:text-small">
           <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-blue-900 p-3">
-            <p className="mr-4 text-md border-solid border-2 border-white whitespace-nowrap p-1 text-center font-bold lg:mb-2 text-white">
+            <p className="mr-4 lg:mr-2 text-md border-solid border-2 border-white whitespace-nowrap p-1 text-center font-bold lg:mb-2 text-white">
               <span className="block text-center">ご購入・</span>
               <span>お問い合せ先</span>
             </p>
-            <div className="mr-2.5 font-bold whitespace-nowrap text-md font-bold text-white">
-              <p className="font-bold text-3xl lg:text-lg text-kirakira-yellow">
+            <div className="flex mr-2.5 font-bold whitespace-nowrap text-md font-bold text-white">
+              <div className="mt-2 lg:w-5 lg:mt-1">
+                <Image src={phoneIcon} />
+              </div>
+              <p className="font-bold text-3xl lg:text-lg text-lightOrange-color">
                 03-6820-1000
               </p>
             </div>
             <div className="text-md font-bold leading-4 text-white">
-              <p>＜ 受付時間 ＞ 9:00〜18:00</p>
-              <p>＜ 定休日 ＞ 木・日・祝</p>
+              <p>&lt;受付時間&gt;9:00〜18:00</p>
+              <p>&lt;定休日&gt;木・日・祝</p>
             </div>
           </div>
         </div>
         <div className="w-full lg:text-small">
           <div className="flex justify-center whitespace-nowrap items-center lg:flex-wrap bg-blue-600 p-3">
-            <div className="text-md font-bold leading-4 text-white mr-10">
+            <div className="text-md font-bold leading-4 text-white mr-10 lg:mr-2">
               <p>株式会社オール・デンタル・ジャパン</p>
               <p>〒111-0052 東京都台東区柳橋2-5-6</p>
             </div>
-            <div className="text-md font-bold leading-4 text-white">
-              <p className="text-lg lg:text-xs">info@all-dental-japan.com</p>
+            <div className="flex text-md font-bold leading-4 text-white">
+              <div className="lg:w-3 lg:scale-150">
+                <Image src={mailIcon} />
+              </div>
+              <p className="text-lg lg:text-xs translate-y-1.5 translate-x-2 lg:-translate-y-0.5">
+                info@all-dental-japan.com
+              </p>
             </div>
           </div>
         </div>
